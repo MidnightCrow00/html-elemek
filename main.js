@@ -17,4 +17,5 @@ console.log(LISTAELEM);
 /* Módositom a tartalmát */
 LISTAELEM.innerHTML = "<h3>CÍMLISTA</h3>"
 LISTAELEM.innerHTML += listaOsszeallit(SZEMELYLISTA)
+KARTYA.innerHTML = kartyabaHelyezes(SZEMELYLISTA);
 TABLAZAT.innerHTML += tablazatbaHelyezes(SZEMELYLISTA)

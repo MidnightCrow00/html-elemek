@@ -15,25 +15,33 @@ export function listaOsszeallit(LISTA){
 }
 
 export function kartyabaHelyezes(LISTA){
-    let txt = ""
+    let txt = "";
     for (let index = 0; index < LISTA.length; index++) {
-        txt += `<div class='szemely'>`
-        txt += ` <h3> név: ${LISTA[index].nev}</h3>
-        <p>  kor: ${LISTA[index].kor} tel: ${LISTA[index].tel} barát: ${LISTA[index].barat}</p>`
-        txt += "</div>"
+        txt += `<div class='szemely'>`;
+        txt += ` <h3>Név: ${LISTA[index].nev}</h3>`;
+        txt += ` <p>Kor: ${LISTA[index].kor}</p>`;
+        txt += ` <p>Tel: ${LISTA[index].tel}</p>`;
+        txt += ` <p>Barát: ${LISTA[index].barat}</p>`;
+        txt += "</div>";
     }
-    console.log(txt)
-    return txt
+    return txt;
 }
+
 export function tablazatbaHelyezes(LISTA){
-    let txt = ""
+    let txt = "<table>";
+    txt += "<tr>";
+    txt += "<th>Név</th><th>Kor</th><th>Tel</th><th>Barát</th>";
+    txt += "</tr>";
     for (let index = 0; index < LISTA.length; index++) {
-        txt += `<table>`
-        txt += ` <h3> név: ${LISTA[index].nev}</h3>
-        <p>  kor: ${LISTA[index].kor} tel: ${LISTA[index].tel} barát: ${LISTA[index].barat}</p>`
-        txt += "</table>"
+        txt += "<tr>";
+        txt += `<td>${LISTA[index].nev}</td>`;
+        txt += `<td>${LISTA[index].kor}</td>`;
+        txt += `<td>${LISTA[index].tel}</td>`;
+        txt += `<td>${LISTA[index].barat}</td>`;
+        txt += "</tr>";
     }
-    console.log(txt)
-    return txt
+    txt += "</table>";
+    return txt;
 }
+
 
